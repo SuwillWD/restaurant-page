@@ -19,8 +19,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 60px;
-    background-color: rgb(56, 56, 56);
+    padding: 20px 60px;
+    background-color: rgb(16, 16, 16);
 }
 
 nav {
@@ -28,7 +28,7 @@ nav {
     gap: 20px;
 }
 
-button {
+header button {
     background-color: transparent;
     color: white;
     border: none;
@@ -53,13 +53,61 @@ header nav button:hover,
     cursor: pointer;
 }
 
+#content {
+    display: flex;
+    flex: 1;
+}
+
+#home-img {
+    width: 40%;
+    height: 100%;
+    background: url(./assets/home-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#home-hero {
+    padding: 120px 80px;
+    background-image: linear-gradient(rgb(33, 33, 33) 80%, white 20%);
+    color: white;
+    flex: 1;
+}
+
+#home-hero h1 {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+#home-hero h1:nth-child(2) {
+    font-size: 48px;
+}
+
+#home-hero button,
+#sign-in-btn {
+    padding: 10px 60px;
+    color: white;
+    background-color: transparent;
+    font-size: 22px;
+    border-radius: 20px;
+    border: 2px solid rgb(149, 149, 149);
+}
+
+#home-hero button:hover,
+#sign-in-btn:hover {
+    color: rgb(226, 226, 226);
+    border-color: rgb(100, 100, 100);
+    cursor: pointer;
+}
+
 footer {
     padding: 10px;
-    background-color: rgb(56, 56, 56);
+    background-color: rgb(16, 16, 16);
     font-size: 18px;
     color: white;
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 footer i {
