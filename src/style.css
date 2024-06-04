@@ -52,3 +52,16 @@ header nav button:hover,
     border-bottom: 2px solid white;
     cursor: pointer;
 }
+
+footer {
+    padding: 10px;
+    background-color: rgb(56, 56, 56);
+    font-size: 18px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+footer i {
+    color: white;
+}
