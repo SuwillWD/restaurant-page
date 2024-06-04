@@ -64,6 +64,7 @@ header nav button:hover,
     background: url(./assets/home-image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    transition: all 2s ease;
 }
 
 #home-hero {
@@ -71,6 +72,7 @@ header nav button:hover,
     background-image: linear-gradient(rgb(33, 33, 33) 80%, white 20%);
     color: white;
     flex: 1;
+    transition: all 4s ease;
 }
 
 #home-hero h1 {
@@ -97,6 +99,30 @@ header nav button:hover,
     color: rgb(226, 226, 226);
     border-color: rgb(100, 100, 100);
     cursor: pointer;
+}
+
+#about-content {
+    background: url(./assets/about-image.jpg);
+    background-color: rgb(255, 255, 255);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 25% 15% 25%;
+    color: white;
+}
+
+#about-content h1 {
+    font-size: 60px;
+}
+
+#about-content p {
+    font-size: 22px;
 }
 
 footer {

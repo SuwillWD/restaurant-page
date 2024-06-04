@@ -7,10 +7,16 @@ const contentDiv = document.getElementById('content');
 export { contentDiv };
 
 import renderHome from "./home";
+import renderMenu from "./menu";
+import renderContact from "./contact";
+import renderAbout from "./about";
 import './style.css';
 
 const renderContentDiv = (function () {
-    renderHome();
+    // renderHome();
 
-    homeBtn.onclick = renderHome();
+    homeBtn.onclick = () => renderHome();
+    menuBtn.onclick = () => renderMenu();
+    contactBtn.onclick = () => renderContact();
+    aboutBtn.onclick = () => renderAbout();
 })();
