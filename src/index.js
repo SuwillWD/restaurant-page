@@ -6,7 +6,8 @@ const aboutBtn = document.getElementById('about');
 const contentDiv = document.getElementById('content');
 
 // Export the contentDiv so that all modules can access it and render content in it dynamically 
-export { contentDiv };
+// Also exports createDiv and createP to create div and p html elements
+export { contentDiv, createDiv, createP };
 
 // Get the function from all the modules that rendres renderes the main content
 import renderHome from "./home";
@@ -17,10 +18,20 @@ import './style.css';
 
 // renderContentDiv calls the appropriate render function according to the user's interaction
 const renderContentDiv = (function () {
-    // renderHome();
+    renderHome();
 
     homeBtn.onclick = () => renderHome();
     menuBtn.onclick = () => renderMenu();
     contactBtn.onclick = () => renderContact();
     aboutBtn.onclick = () => renderAbout();
 })();
+
+// create div element
+function createDiv () {
+    return document.createElement('div');
+};
+
+// create p element
+function createP () {
+    return document.createElement('p');
+};
