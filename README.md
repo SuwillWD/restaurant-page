@@ -28,7 +28,7 @@ Each section is dynamically generated through JavaScript, allowing for easy upda
 
 ## Live Preview 
 
-You can preview the website [here.]()
+You can preview the website [here.](https://suwillwd.github.io/restaurant-page/)
 
 ## Credits
 
