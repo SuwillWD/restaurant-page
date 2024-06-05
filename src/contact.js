@@ -76,25 +76,10 @@ export default function renderContact () {
     const p3 = document.createElement('p');
     const p4 = document.createElement('p');
 
-    const i1 = document.createElement('i');
-    const i2 = document.createElement('i');
-    const i3 = document.createElement('i');
-
-    i1.classList.add('bx');
-    i1.classList.add('bx-current-location');
-    i2.classList.add('bx');
-    i2.classList.add('bx-phone');
-    i3.classList.add('bx');
-    i3.classList.add('bx-envelope');
-
-    p2.appendChild(i1);
-    p3.appendChild(i2);
-    p4.appendChild(i3);
-
     p1.textContent = 'Alternatively,';
-    p2.textContent = 'Apt. 636 463 Cyndy Light, New Simonfurt, MN 97692';
-    p3.textContent = '+1 (115) 380-0505';
-    p4.textContent = 'alexschmitt@realemail.com';
+    p2.innerHTML = '<i class="bx bx-current-location"></i> Apt. 636 463 Cyndy Light, New Simonfurt, MN 97692';
+    p3.innerHTML = '<i class="bx bx-phone"></i> +1 (115) 380-0505';
+    p4.innerHTML = '<i class="bx bx-envelope"></i> alexschmitt@realemail.com';
 
     alternativeDiv.appendChild(p1);
     alternativeDiv.appendChild(p2);
